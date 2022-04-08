@@ -68,7 +68,7 @@ body {
 
 #content-container {
     width: 85%;
-    max-width: 1051px;
+    max-width: 743px;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
 
@@ -185,3 +185,4 @@ body {
 }
 
 /* Home Page Styles End*/
+
