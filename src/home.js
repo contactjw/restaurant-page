@@ -1,22 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="main.js"></script>
-    <title>Restaurant Page</title>
-</head>
-<body>
-    <div id="content">
-        <!-- <div id="navbar">
+let contentDiv = document.querySelector('#content');
+
+
+function createHome() {
+    createNavBar();
+}
+
+function createNavBar() {
+    let navDiv = createDiv('navbar');
+    let divHome = createDiv('home');
+    divHome.innerHTML = 'Home';
+    let divMenu = createDiv('menu');
+    divMenu.innerHTML = 'Menu';
+    let divContact = createDiv('contact');
+    divContact.innerHTML = 'Contact';
+
+    navDiv.appendChild(divHome);
+    navDiv.appendChild(divMenu);
+    navDiv.appendChild(divContact);
+}
+
+function createDiv(idName) {
+    let div = document.createElement('div');
+    div.setAttribute('id', idName);
+    return div;
+}
+
+
+export default createHome;
+
+
+/* <div id="navbar">
             <div id="home">Home</div>
             <div id="menu">Menu</div>
-            <div id="contact">Contact</div>
+            <div id="Contact">Contact</div>
         </div>
 
         <div id="main">
@@ -26,7 +42,7 @@
                     Jean-Paul's Pizzeria
                 </div>
 
-                <img id="main-image" src="./images/hoja-studio-Thw3nleO3cM-unsplash.jpeg" alt="image of pizza chef">
+                <img id="main-image" src="./images/hoja-studio-Thw3nleO3cM-unsplash.jpg" alt="image of pizza chef">
     
                 <div class="main-small-container">
                     <div class="review-description">
@@ -66,8 +82,4 @@
         <div id="footer">
             <p>Copyright <span>&copy;</span> 2022 John West</p>
             <a href="https://github.com/contactjw" target="_blank"><img src="./images/icons8-github.svg" alt="github icon" id="github-image"></a>
-        </div> -->
-    </div>
-    
-</body>
-</html>
+        </div> */

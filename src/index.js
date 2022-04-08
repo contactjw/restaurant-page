@@ -1,2 +1,5 @@
-console.log("it works!");
+import createHome from "./home";
+
+console.log('inside of index.js')
+createHome();
 
