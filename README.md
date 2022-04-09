@@ -3,5 +3,7 @@ A dynamically generated restaurant page created with HTML, CSS, vanilla JavaScri
 
 
 Image Credits:
+
 Nik Owens: https://unsplash.com/photos/40OJLYVWeeM
+
 Hoja Studio: https://unsplash.com/photos/Thw3nleO3cM
