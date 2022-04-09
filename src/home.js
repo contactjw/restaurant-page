@@ -1,14 +1,9 @@
-let contentDiv = document.querySelector('#content');
-
 
 function createHome() {
-    createMainContent();
-}
-
-function createMainContent() {
+    let main = document.querySelector('#main');
+    let contentContainer = document.querySelector('#content-container');
     // restaurant title and image
-    let main = createDiv('main');
-    let contentContainer = createDiv('content-container');
+    contentContainer.innerHTML = "";
     let restaurantNameContainer = createDiv('restaurant-name-container');
     restaurantNameContainer.innerHTML = 'Jean-Paul\'s Pizzeria';
     let mainImage = document.createElement('img');
@@ -72,14 +67,12 @@ function createMainContent() {
 
 
     // append all sections to contentContainer
-    contentDiv.appendChild(main);
     main.appendChild(contentContainer);
     contentContainer.appendChild(restaurantNameContainer);
     contentContainer.appendChild(mainImage);
     contentContainer.appendChild(reviewContainer);
     contentContainer.appendChild(hoursContainer);
     contentContainer.appendChild(locationContainer);
-
 }
 
 

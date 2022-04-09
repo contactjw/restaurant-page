@@ -1,16 +1,43 @@
 import {createHome, createDiv} from "./home";
+import createMenu from "./menu";
 
 let contentDiv = document.querySelector('#content');
 
 console.log('inside of index.js')
 
-//initialize the site.. always need to run this first
+//it is running all of this code every single time you click a button
 createNavBar();
+createMain();
 createHome();
 createFooter();
 
+let homeButton = document.querySelector('#home');
+let menuButton = document.querySelector('#menu');
+let contactButton = document.querySelector('#contact');
 
 
+
+// maybe add logic to check if home is already open
+homeButton.addEventListener('click', () => {
+    createHome();
+    console.log('you clicked home');
+});
+
+menuButton.addEventListener('click', () => {
+    console.log('you clicked menu');
+    createMenu();
+});
+
+
+
+
+
+function createMain() {
+    let main = createDiv('main');
+    let contentContainer = createDiv('content-container');
+    contentDiv.appendChild(main);
+    contentDiv.appendChild(contentContainer);
+}
 
 
 function createNavBar() {
