@@ -20,7 +20,7 @@ function createMenu() {
     hamImage.setAttribute('alt', 'ham and mushroom pizza');
     let hamTitle = document.createElement('div');
     hamTitle.setAttribute('class', 'pizza-title');
-    hamTitle.innerHTML = 'Ham and Mushroom';
+    hamTitle.innerHTML = 'Mushroom';
     let hamDescription = document.createElement('div');
     hamDescription.setAttribute('class', 'pizza-description');
     hamDescription.innerHTML = 'Aged mozarella cheese with our house made garlic tomato sauce, topped with ham and mushrooms.';
