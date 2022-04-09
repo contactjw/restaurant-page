@@ -2,8 +2,7 @@
 A dynamically generated restaurant page created with HTML, CSS, vanilla JavaScript, NPM, and Webpack.
 
 
-Live Preview of Project: https://contactjw.github.io/restaurant-page/
-
+Live Demo: https://contactjw.github.io/restaurant-page/
 
 
 Image Credits:
