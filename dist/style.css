@@ -6,10 +6,9 @@
     color: white;
 }
 
-/* html, body {
-    height: 100%;
-    width:100%;
-} */
+html {
+    min-height: 100vh;
+}
 
 body {
     background-image: url('./images/nik-owens-40OJLYVWeeM-unsplash.jpeg');
@@ -19,13 +18,15 @@ body {
     background-color:black;
     background-attachment: fixed;
     position: relative;
+    min-height: 100%;
 }
 
 
 /* Home Page Styles Start*/
 #content {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    /* height: 100%; */
     /* position: absolute; */
     display: flex;
     flex-direction: column;
@@ -41,7 +42,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 }
 
@@ -71,10 +72,12 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
 }
 
 #content-container {
     width: 85%;
+    min-width: 396px;
     max-width: 750px;
     background-color: rgba(0, 0, 0, 0.65);
     border-radius: 10px;
@@ -182,7 +185,8 @@ body {
     height: 50px;
     width: 100%;
 
-    /* position: absolute; */
+    /* CHANGE THIS IF THE REST OF THE FOOTERS ARE SCREWED UP */
+    /* position:absolute; */
     bottom: 0;
 
     display: flex;
@@ -249,5 +253,53 @@ body {
     #pizzas-grid {
       grid-template-columns: repeat(1, 1fr);
     }
-  }
 
+    #navbar div {
+        width: 115px;
+    
+        padding-left: 15px;
+        padding-top: 12px;
+        padding-right: 15px;
+        padding-bottom: 12px;
+    
+        margin-left: 10px;
+        margin-right: 10px;
+    
+        text-align: center;
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    /* #footer {
+        position:absolute;
+    } */
+}
+
+/* Menu Page Styles End*/
+
+
+
+/* Contact Page Styles Start*/
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#phone-number {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+#contact-address {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+
+#contact-image {
+    width: 90%;
+    align-self: center;
+}

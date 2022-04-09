@@ -1,26 +1,27 @@
-import {createHome, createDiv} from "./home";
-import createMenu from "./menu";
+import {createHome, createDiv} from './home';
+import createMenu from './menu';
+import createContact from './contact';
 
 let contentDiv = document.querySelector('#content');
 
 console.log('inside of index.js')
 
-//it is running all of this code every single time you click a button
+// initialize the website
 createNavBar();
 createMain();
 createHome();
 createFooter();
 
+
+// tab event listeners and selectors
 let homeButton = document.querySelector('#home');
 let menuButton = document.querySelector('#menu');
 let contactButton = document.querySelector('#contact');
 
-
-
 // maybe add logic to check if home is already open
 homeButton.addEventListener('click', () => {
-    createHome();
     console.log('you clicked home');
+    createHome();
 });
 
 menuButton.addEventListener('click', () => {
@@ -28,10 +29,14 @@ menuButton.addEventListener('click', () => {
     createMenu();
 });
 
+contactButton.addEventListener('click', () => {
+    console.log('you clicked contact');
+    createContact();
+});
 
 
 
-
+// initialize website functions
 function createMain() {
     let main = createDiv('main');
     let contentContainer = createDiv('content-container');
@@ -56,6 +61,7 @@ function createNavBar() {
 
     contentDiv.appendChild(navDiv);
 }
+
 
 function createFooter() {
     let footer = createDiv('footer');
